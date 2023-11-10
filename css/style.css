@@ -561,19 +561,20 @@ body {
   line-height: 1.5rem;
 }
 .header-deals__link {
-  border-radius: 0.3125rem;
-  background-color: rgb(248, 90, 71);
+  background-color: #F85A47;
   display: inline-block;
+  transition: all 0.3s ease 0s;
   font-weight: 500;
   font-size: 1.0625rem;
   text-align: center;
   color: #fff;
+  line-height: 1.4375rem;
   padding: 1.375rem 2.0625rem;
-  box-shadow: 0px 0.1157rem 0.1968rem 0px rgba(248, 90, 71, 0.02), 0px 0.5093rem 0.4074rem 0px rgba(248, 90, 71, 0.03), 0px 1.25rem 0.8125rem 0px rgba(248, 90, 71, 0.04), 0px 2.4074rem 1.5926rem 0px rgba(248, 90, 71, 0.04), 0px 4.0509rem 2.9282rem 0px rgba(248, 90, 71, 0.05), 0px 6.25rem 5rem 0px rgba(248, 90, 71, 0.07);
-  transition: background 0.3s ease 0s;
+  box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+  border-radius: 0.3125rem;
 }
 .header-deals__link:hover {
-  background-color: rgb(244, 65, 45);
+  background-color: #b9473a;
 }
 
 .tabs-deals__nav {
@@ -751,15 +752,16 @@ body {
   margin-bottom: 3.4375rem;
 }
 .content-featured__link {
-  border-radius: 0.3125rem;
-  color: #fff;
-  display: block;
-  text-align: center;
-  padding: 1rem 2.375rem;
-  line-height: 150%;
   background-color: #F85A47;
-  box-shadow: 0px 1.85185px 3.14815px 0px rgba(248, 90, 71, 0.02), 0px 8.14815px 6.51852px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.51852px 25.48148px 0px rgba(248, 90, 71, 0.04), 0px 64.81481px 46.85185px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1rem 2.1875rem;
+  text-align: center;
+  line-height: 150%;
+  display: block;
   transition: background-color 0.3s ease 0s;
+  box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+  border-radius: 0.3125rem;
 }
 @media (min-width: 61.9375rem) {
   .content-featured__link {
@@ -767,7 +769,7 @@ body {
   }
 }
 .content-featured__link:hover {
-  background-color: #c53626;
+  background-color: #cf4a3b;
 }
 
 .options-content-featured__label {
@@ -803,18 +805,20 @@ body {
 }
 .reviews__items {
   display: grid;
+  gap: 1.875rem;
   grid-template-columns: repeat(auto-fill, minmax(18.125rem, 1fr));
 }
 .item-reviews {
   color: inherit;
-  padding: 3.125rem 2.5rem;
+  padding: 50px 40px;
   background: #FFFFFF;
-  border: 0.0625rem solid #EBEBEB;
-  border-radius: 0.625rem;
+  border: 1px solid #EBEBEB;
+  border-radius: 10px;
   transition: all 0.3s ease 0s;
+  box-shadow: none;
 }
 .item-reviews:hover {
-  border: 0.0625rem solid transparent;
+  border: 1px solid transparent;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222), 3px 44px 54px rgba(0, 0, 0, 0.08);
 }
 .item-reviews__raiting {
