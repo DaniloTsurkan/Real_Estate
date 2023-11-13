@@ -132,6 +132,7 @@ body {
 
 }
 
+
 .menu {
 
    &__list {
@@ -161,7 +162,6 @@ body {
       }
    }
 }
-
 
 
 
@@ -249,8 +249,6 @@ body {
    }
 }
 
-
-
 .content-main-block {
    padding-top: 2.5rem;
    position: relative;
@@ -321,8 +319,6 @@ body {
       }
    }
 }
-
-
 
 .form-main-block {
    display: flex;
@@ -414,6 +410,7 @@ body {
       }
    }
 }
+
 
 .how {
    padding-top: 6.875rem;
@@ -538,7 +535,6 @@ body {
    }
 
 }
-
 
 .deals {
    padding-top: 6.875rem;
@@ -704,7 +700,6 @@ body {
 
 .featured {
 
-   &__container {}
 
    &__title {
       margin-bottom: 5.9375rem;
@@ -737,7 +732,6 @@ body {
       gap: 4.8125rem;
    }
 
-   &__images {}
 
    &__content {
       display: flex;
@@ -823,7 +817,6 @@ body {
 
 .options-content-featured {
 
-   &__item {}
 
    &__label {
       font-weight: 700;
@@ -847,16 +840,19 @@ body {
    padding-bottom: 6.875rem;
 
    @media (max-width: 61.9988rem) {
-      padding-top: 70px;
-      padding-bottom: 70px;
+      padding-top: 4.375rem;
+      padding-bottom: 4.375rem;
    }
 
    @media (max-width: 47.9988rem) {
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 1.875rem;
+      padding-bottom: 1.875rem;
    }
 
-   &__container {}
+   &__footer {
+      padding-top: 5.3125rem;
+   }
+
 
    &__title {
       margin-bottom: 3.125rem;
@@ -869,7 +865,6 @@ body {
       grid-template-columns: repeat(auto-fill, minmax(18.125rem, 1fr));
    }
 
-   &__item {}
 }
 
 .item-reviews {
@@ -879,7 +874,6 @@ body {
    border: 1px solid #EBEBEB;
    border-radius: 10px;
    transition: all 0.3s ease 0s;
-   box-shadow: none;
 
    &:hover {
       border: 1px solid transparent;
@@ -892,23 +886,245 @@ body {
 
    &__text {
       line-height: 1.5;
+      margin-bottom: 3.125rem;
    }
 
 }
 
-
 .author-item-reviews {
-   // display: flex;
+   display: flex;
+   gap: 1.25rem;
+   align-items: center;
 
    &__avatar {
-      // flex: 0 0 3rem;
-      // border-radius: 50%;
-      // overflow: hidden;
+      flex: 0 0 3rem;
+      border-radius: 50%;
+      overflow: hidden;
    }
 
-   &__body {}
+   &__name {
+      font-weight: 700;
+      line-height: 1.37;
+   }
 
-   &__name {}
 
-   &__location {}
+   &__location {
+      color: #666;
+      font-size: 0.875rem;
+      line-height: 19px;
+   }
+}
+
+
+.footer-reviews {
+   display: flex;
+   column-gap: 6.25rem;
+
+   @media (max-width:61.9988rem) {
+      flex-wrap: wrap;
+      row-gap: 1.875rem;
+   }
+
+   &__partners {
+      flex: 1 1 auto;
+   }
+
+   &__info {
+      flex: 0 0 18.75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+
+      /* 24/16 */
+      a {
+         color: #2CBDE7;
+         text-decoration: underline;
+
+         &:hover {
+            text-decoration: none;
+         }
+      }
+   }
+}
+
+.partners-footer-reviews {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.25rem;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+
+.subscribe {
+
+   padding-top: 6.875rem;
+   padding-bottom: 6.875rem;
+
+   @media (max-width: 61.9988rem) {
+      padding-top: 4.375rem;
+      padding-bottom: 4.375rem;
+   }
+
+   @media (max-width: 47.9988rem) {
+      padding-top: 1.875rem;
+      padding-bottom: 1.875rem;
+   }
+
+
+   &__header {
+      text-align: center;
+      margin-bottom: 2.125rem;
+   }
+
+   &__title {
+      color: #31353B;
+      font-size: 2.8125rem;
+      font-weight: 700;
+      line-height: 144.2%;
+      /* 64.89px */
+      letter-spacing: 0.9px;
+
+      @media (max-width:61.9988em) {
+         font-size: 2.1875rem;
+      }
+
+      @media (max-width:47.9988em) {
+         font-size: 1.5rem;
+      }
+   }
+
+   &__sub-title {
+      font-weight: 700;
+      font-size: 1.4375rem;
+      line-height: 144.2%;
+
+      @media (max-width:61.9988em) {
+         font-size: 1.25rem;
+      }
+
+      @media (max-width:47.9988em) {
+         font-size: 1.125rem;
+      }
+   }
+
+   &__form {
+      max-width: 42.875rem;
+      margin: 0px auto;
+   }
+}
+
+.form-subscribe {
+   padding: 1.5625rem 2.8125rem;
+   background: #FFF;
+   display: flex;
+   gap: 0.9375rem;
+   box-shadow: 0px 3.01852px 3.14815px 0px rgba(0, 0, 0, 0.01), 0px 13.28148px 6.51852px 0px rgba(0, 0, 0, 0.02), 0px 32.6px 13px 0px rgba(0, 0, 0, 0.02), 0px 62.78519px 25.48148px 0px rgba(0, 0, 0, 0.02), 0px 105.64815px 46.85185px 0px rgba(0, 0, 0, 0.03), 0px 163px 80px 0px rgba(0, 0, 0, 0.04);
+
+   @media (max-width:47.9988em) {
+      margin: 0 -0.9375rem;
+      padding: 0.9375rem;
+      flex-direction: column;
+   }
+
+   &__content {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__label {
+      display: block;
+      margin-bottom: 0.625rem;
+      color: rgba(49, 53, 58, 0.2)
+   }
+
+   &__input {
+      flex: 1 1 auto;
+      width: 100%;
+      font-size: 1.25rem;
+      font-weight: 700;
+      min-height: 1.875rem;
+   }
+
+   &__button {
+      background: #F85A47;
+      box-shadow: 0px 1.85185px 3.14815px 0px rgba(248, 90, 71, 0.02), 0px 8.14815px 6.51852px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.51852px 25.48148px 0px rgba(248, 90, 71, 0.04), 0px 64.81481px 46.85185px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
+      color: #fff;
+      height: 4.5rem;
+      padding: 0.625rem 2.5rem;
+      font-size: 1.125rem;
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+
+      &:hover {
+         background: #d03929;
+
+      }
+   }
+}
+
+.footer {
+
+   &__container {
+      border-top: 1px solid#dedfe1;
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      row-gap: 4.375rem;
+
+      @media (max-width: 47.9988em) {
+         grid-template-columns: 1fr;
+         justify-items: center;
+      }
+   }
+
+   &__logo {
+      font-size: 1.4375rem;
+      font-weight: 800;
+      line-height: 31px;
+      color: inherit;
+   }
+
+   &__menu {
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   &__copy {
+      font-weight: 700;
+      font-size: 0.75rem;
+      line-height: 16px;
+      text-align: center;
+
+      @media (min-width:48em) {
+         grid-column: span 2;
+      }
+   }
+}
+
+.menu-footer {
+
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 2.8125rem;
+      row-gap: 0.9375rem;
+      column-gap: 1.25rem;
+
+   }
+
+
+   &__link {
+      font-weight: 700;
+      font-size: 0.8125rem;
+      line-height: 17px;
+      color: inherit;
+
+      &:hover {
+         text-decoration: underline;
+      }
+   }
 }
